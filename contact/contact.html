@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>My First Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="header3">
+      <nav>
+      <a href="index.html"><img src="logos/wallp.png" width="125" height="85"></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html"><img class="imgi" src="logos/close-icon.svg" width="25" height="25" onclick="hideMenu()"></a>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../photos/index.html">PHOTOS</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+
+      </div>
+      <a href="index.html"><img class="imgi" src="logos/list.svg" width="25" height="25" onclick="showMenu()"></a>
+      </nav>
+ <div class="text-box">
+   <h1>Get In Contact</h1>
+
+ </div>
+
+    </section>
+
+    <!----JavaScript for togle menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+       navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+    </script>
+
+    <!---- contact info ---->
+    <section class="globe bg-dark">
+      <h1>Get In Touch With Me<br>From anyway.</h1>
+
+    </section>
+
+    <section class="contactus">
+      <div class="container">
+        <div class="row1">
+          <div class="contactus-col">
+            <h2>Business address</h2>
+            <p>723 Izayi Park<br> Zvishavane<br> Zimbabwe</p>
+            <h2>Phone</h2>
+            <p>+263(0)713873287<br>+263(0)774700126</p>
+            <h2>email</h2>
+            <p>teepayce11@outlook.com</p>
+        </div>
+        <div class="contactus-col">
+          <h3>Leave A Message</h3>
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+            <!---Name----->
+            <div class="form-floating mb-3">
+              <input class="form-control" id="name" type="text" placeholder="Enter your name..." required>
+              <div class="layer">
+              <label for="name">Full name</label>
+              </div>
+              <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+            </div>
+            <!----email------>
+          <div class="form-floating mb-3">
+            <input class="form-control" id="email" type="email" placeholder="name@example.com" required email>
+            <div class="layer">
+            <label for="email">Email address</label>
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+          </div>
+          <!----phone---->
+          <div class="form-floating mb-3">
+             <input class="form-control" id="phone" type="tel" placeholder="+263(0)774-567-890" required  size="15" maxlength="30" >
+             <div class="layer">
+             <label for="phone" align="bottom">Phone number</label>
+             </div>
+             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+           </div>
+           <!-----rate--->
+           <div class="form-floating mb-3">
+             <p>What did you think of my website.<br>It is
+              <select class="selct" name="ratings">
+                <option value="bad">bad</option>
+                <option value="good">good</option>
+                <option value="reallygood">really good</option>
+              </select></p>
+
+              </div>
+            <!----message----->
+            <div class="form-floating mb-3">
+               <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+               <div class="layer">
+               <label for="message">Message</label>
+               </div>
+               <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+           </div>
+           <!----submit button--->
+           <div class="d-grid"><button class="hero-btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+
+          </form>
+
+        </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!----footer---->
+    <section class="footer">
+      <h4>About us</h4>
+
+        <p>I am a technoprat at the verge of my prime. I do hope that you will catch me on all my social media platforms as I transgrace through my journey.</p>
+        <div class="icons">
+          <div class="container">
+              <div class="row-icon">
+                <div class="col">
+                  <a href="index.html"><img class="imglogo" src="logos/facebook.svg"></a>
+                </div>
+                <div class="col">
+                 <a href="index.html"><img class="imglogo" src="logos/instagram.svg"></a>
+                </div>
+               <div class="col">
+                 <a href="index.html"><img class="imglogo" src="logos/youtube.svg"></a>
+               </div>
+               <div class="col">
+                 <a href="index.html"><img class="imglogo" src="logos/twitter.svg"></a>
+               </div>
+            </div>
+          </div>
+        </div>
+        <p> A  <img class="imglogo" src="logos/camera-fill.svg">   of my imagination </p>
+    </section>
+  </body>
+</html>
